@@ -15,7 +15,7 @@ output:
   <!-- LEFT: Text (70%) -->
   <div style="flex:0.7; min-width:260px;">
     
-    <h1 style="margin-top:0;">Context & Problem</h2>
+    <h1 style="margin-top:0;">Context & Problem</h1>
 
     <p>
       Upon starting their MBA and EMBA programs, students at Columbia Business School participate in an intensive, week-long leadership course led by faculty in the Management Division. This course marks the <strong>beginning of their leadership development journey</strong>, during which students create a personal leadership action plan that accompanies them throughout their program.
