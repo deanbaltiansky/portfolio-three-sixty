@@ -209,7 +209,7 @@ The reporting system was built as a two-stage analytics pipeline: a centralized 
   - **Parameterized report generation:** A parameterized R Markdown template was then used to generate personalized PDF reports. The system looped over student identifiers, injecting each student’s precomputed summaries and qualitative feedback into a standardized report structure and rendering the output via LaTeX.
   - **Batch execution and reliability:** Once configured for a given term, the pipeline could be executed end to end to generate thousands of individualized reports in a single batch run, with deterministic outputs and minimal manual intervention.
 
-# Reponsible AI for Qualitative Feedback
+# Responsible AI for Qualitative Feedback
 
   - **Problem context:** Each reporting cycle included tens of thousands of open-ended peer comments. These comments needed to be reviewed for offensive or inappropriate language before being shared with students, both to protect recipients and to meet institutional standards.
   - **Prior approach and limitations:** Previously, all comments were reviewed manually by research assistants. This process was slow, costly, delayed report delivery, and produced a large number of false alarms that faculty still had to adjudicate one by one.
