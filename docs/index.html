@@ -350,15 +350,19 @@ display: none;
 
 <h1 class="title toc-ignore">Automated 360 Leadership Feedback
 System</h1>
+<h3 class="subtitle">Scaling leadership development through
+interpretable high-trust analytics</h3>
 
 </div>
 
 
-<p><strong>I built, automated, and owned Columbia Business School’s 360°
-Leadership Feedback system, used by all MBA and EMBA students to deliver
-personalized, multi-source leadership reports at scale in support of
-leadership development. The work was recognized with a school-wide
-teaching award.</strong></p>
+<p><strong>I built and owned the data pipeline and automated
+report-generation workflow for Columbia Business School’s 360°
+Leadership Feedback program, enabling personalized, multi-source PDF
+reports at scale for MBA and EMBA cohorts.</strong></p>
+<p><strong>The workflow replaced a costly third-party reporting setup,
+improved interpretability for students and coaches, and was recognized
+with a school-wide teaching award.</strong></p>
 
 <div style="display:flex; gap:24px; align-items:flex-start; margin-top:24px;">
 
@@ -368,19 +372,15 @@ teaching award.</strong></p>
     <h1 style="margin-top:0;">Context &amp; Problem</h1>
 
     <p>
-      Upon starting their MBA and EMBA programs, students at Columbia Business School participate in an intensive, week-long leadership course led by faculty in the Management Division. This course marks the <strong>beginning of their leadership development journey</strong>, during which students create a personal leadership action plan that accompanies them throughout their program.
+      As part of Columbia Business School’s <strong>core leadership curriculum</strong>, MBA and EMBA students complete a 360° feedback assessment that combines self-ratings, peer evaluations from classmates, and feedback from current or former coworkers. The resulting report serves as a <strong>key input to executive coaching sessions</strong>, where students reflect on their leadership style and define development goals.
     </p>
 
     <p>
-      As part of this process, students complete the <strong>Lead 360 survey</strong>: a multi-source assessment that combines self-ratings, classmate evaluations, and feedback from past coworkers across a broad set of leadership skills and traits. After a month of data collection, students receive a <strong>detailed feedback report</strong> showing how they see themselves, how others see them, and how they compare to their peers. This report serves as the <strong>foundation for an executive coaching session, where students translate feedback into a concrete development plan</strong>.
+      Prior to Fall 2022, the reporting workflow relied on a third-party Qualtrics XM solution that generated basic summary statistics and offered limited flexibility in how feedback could be structured or interpreted. While data collection was robust, the reports themselves were often difficult to use in practice. Comparisons were coarse, insights were hard to interpret, and faculty and coaches had limited ability to tailor outputs to pedagogical goals.
     </p>
     
     <p>
-      Prior to Fall 2022, the Management Division relied on an expensive third-party solution through Qualtrics XM, which generated only basic summary statistics and offered limited flexibility in how feedback was presented. Faculty wanted a system that could deliver deeper, more interpretable insights while scaling reliably to thousands of students on a strict academic timeline.
-    </p>
-    
-    <p>
-      In response, <strong>I designed and built a new end-to-end system for generating and delivering personalized 360° leadership feedback</strong>. Over the course of three years, I developed the infrastructure and processes that now support this experience for all MBA and EMBA students at Columbia Business School.
+      At the same time, the program operated under strict constraints: fixed academic timelines, large cohorts, and the need to deliver sensitive, multi-source feedback in a way that was clear, psychologically safe, and usable by a non-technical audience. The challenge was not collecting more data, but transforming existing data into interpretable, decision-ready feedback that could reliably support leadership coaching at scale.
     </p>
 
   </div>
@@ -394,11 +394,12 @@ teaching award.</strong></p>
 
 <div id="my-role-ownership" class="section level1">
 <h1>My Role &amp; Ownership</h1>
-<p>I was the sole owner of the 360° Leadership Feedback system from
-initial design through production. I built the entire codebase from
-scratch, designed the data pipelines and automation infrastructure, and
-made core decisions about how multi-source feedback was processed,
-summarized, and presented to students.</p>
+<p>I owned the data pipeline and automated report-generation workflow
+for the 360° Leadership Feedback system, from initial design through
+production. I built the reporting codebase from scratch, designed the
+data processing and automation infrastructure, and made core decisions
+about how multi-source feedback was processed, summarized, and presented
+to students.</p>
 <p>Beyond implementation, I partnered closely with Management Division
 faculty and the Bernstein Center for Leadership to translate pedagogical
 goals into interpretable, actionable feedback. This included decisions
@@ -412,10 +413,33 @@ documented the system and structured the code to enable a smooth handoff
 to a dedicated data science team when I transitioned off the
 project.</p>
 </div>
+<div id="impact-snapshot" class="section level1">
+<h1>Impact Snapshot</h1>
+<ul>
+<li><strong>Program-wide use:</strong> Delivered to all MBA and EMBA
+students as part of the required leadership curriculum<br />
+</li>
+<li><strong>Scale:</strong> Thousands of reports per term incorporating
+tens of thousands of evaluations<br />
+</li>
+<li><strong>Recognition:</strong> Awarded a school-wide teaching award
+for leadership education impact</li>
+</ul>
+</div>
 <div id="the-product-personalized-360-reports" class="section level1">
 <h1>The Product: Personalized 360 Reports</h1>
+<p><em>How the reporting system translated multi-source data into usable
+leadership insight.</em></p>
+<p>The reporting system was designed to translate complex, multi-source
+feedback into insight that students and coaches could actually use. The
+structure intentionally surfaces high-level patterns first, with the
+option to drill down into more detailed views when needed, balancing
+clarity, psychological safety, and analytical depth.</p>
 <div id="the-lead-360-survey" class="section level2">
 <h2>The Lead 360 Survey</h2>
+<p><em>Designed to collect aligned, multi-source feedback that supports
+meaningful self–other comparison while preserving rater anonymity and
+trust.</em></p>
 <div style="display:flex; gap:2rem; align-items:flex-start; margin:1.5rem 0;">
 
   <!-- Left column: bullets / text -->
@@ -445,12 +469,12 @@ project.</p>
   </div>
 
 </div>
-<p>This design produces aligned, multi-source feedback that supports
-both meaningful self–other comparison and downstream aggregation in the
-final report.</p>
 </div>
 <div id="high-level-feedback-overviews" class="section level2">
 <h2>High-Level Feedback Overviews</h2>
+<p><em>Surfaces clear, interpretable patterns to help students quickly
+calibrate how they see themselves versus how others experience
+them.</em></p>
 <div style="display:flex; gap:2rem; align-items:flex-start; margin:1.5rem 0;">
 
   <!-- Left column: bullets / text -->
@@ -483,6 +507,8 @@ final report.</p>
 </div>
 <div id="domain-level-deep-dives" class="section level2">
 <h2>Domain-Level Deep Dives</h2>
+<p><em>Enables focused exploration of specific leadership domains once
+high-level strengths and gaps are identified.</em></p>
 <div style="display:flex; gap:2rem; align-items:flex-start; margin:1.5rem 0;">
 
   <!-- Left column: bullets / text -->
@@ -515,6 +541,9 @@ final report.</p>
 </div>
 <div id="general-impressions-personality-big-five" class="section level2">
 <h2>General Impressions &amp; Personality (Big Five)</h2>
+<p><em>Provides broader context for leadership feedback by highlighting
+how personality traits are perceived across different
+audiences.</em></p>
 <div style="display:flex; gap:2rem; align-items:flex-start; margin:1.5rem 0;">
 
   <!-- Left column: bullets / text -->
@@ -547,58 +576,64 @@ final report.</p>
 </div>
 <div id="system-architecture-automation" class="section level1">
 <h1>System Architecture &amp; Automation</h1>
+<p>I designed a scalable analytics and reporting pipeline that
+transformed raw, multi-source survey data into reliable, personalized
+feedback products delivered on a fixed academic timeline. The system was
+built to minimize manual intervention, enforce privacy constraints, and
+produce consistent outputs at scale.</p>
 <p>The reporting system was built as a two-stage analytics pipeline: a
 centralized data processing script followed by a parameterized
 report-generation layer.</p>
 <ul>
 <li><strong>Centralized data processing:</strong> Raw numeric and
-open-text survey data were ingested from Qualtrics and combined into a
-single, analysis-ready dataset. This processing step handled data
-cleaning, variable harmonization, reverse-scoring, scale construction,
-and validation of rater counts by relationship type (self, classmates,
-coworkers).</li>
+open-text survey data were ingested from Qualtrics and transformed into
+a single, analysis-ready dataset. This step handled data validation,
+scale construction, reverse scoring, rater-count thresholds, and
+harmonization across self, peer, and coworker inputs to ensure
+consistency and reproducibility.</li>
 <li><strong>Student-level aggregation:</strong> Within the processing
 script, the pipeline computed domain-level and item-level summary
 statistics for each student, separately by rater source. This produced a
 structured set of student-specific inputs—including self-ratings,
 source-specific averages, peer aggregates, and benchmarking
 statistics—used downstream for report generation.</li>
-<li><strong>Conditional report logic:</strong> Based on available rater
-data, students were automatically assigned to one of several reporting
-paths (full data, classmates-only, or coworkers-only), ensuring
-consistent privacy thresholds while maximizing usable feedback for each
-student.</li>
+<li><strong>Conditional report logic:</strong> To preserve anonymity
+while maximizing usable feedback, students were automatically routed
+into different reporting paths based on available rater data. This
+ensured privacy thresholds were enforced without blocking report
+delivery.</li>
 <li><strong>Parameterized report generation:</strong> A parameterized R
 Markdown template was then used to generate personalized PDF reports.
 The system looped over student identifiers, injecting each student’s
 precomputed summaries and qualitative feedback into a standardized
 report structure and rendering the output via LaTeX.</li>
 <li><strong>Batch execution and reliability:</strong> Once configured
-for a given term, the pipeline could be executed end to end to generate
-thousands of individualized reports in a single batch run, with
-deterministic outputs and minimal manual intervention.</li>
+for a term, the pipeline could be executed end to end to generate all
+reports in a single batch run, producing deterministic outputs with
+minimal manual oversight and predictable turnaround times.</li>
 </ul>
 </div>
 <div id="responsible-ai-for-qualitative-feedback" class="section level1">
 <h1>Responsible AI for Qualitative Feedback</h1>
+<p>Each reporting cycle included tens of thousands of open-ended peer
+comments. These comments needed to be reviewed for offensive,
+inappropriate, or harmful language before being shared with students,
+both to protect recipients and to meet institutional standards for
+psychological safety.</p>
 <ul>
-<li><strong>Problem context:</strong> Each reporting cycle included tens
-of thousands of open-ended peer comments. These comments needed to be
-reviewed for offensive or inappropriate language before being shared
-with students, both to protect recipients and to meet institutional
-standards.</li>
-<li><strong>Prior approach and limitations:</strong> Previously, all
-comments were reviewed manually by research assistants. This process was
-slow, costly, delayed report delivery, and produced a large number of
-false alarms that faculty still had to adjudicate one by one.</li>
+<li><strong>Problem context:</strong> Manual review of qualitative
+feedback had become a major operational bottleneck. Research assistants
+reviewed every comment by hand, which was slow, costly, delayed report
+delivery, and still required faculty oversight for edge cases.</li>
 <li><strong>AI-assisted screening:</strong> I introduced an AI-assisted
 moderation step using the OpenAI API and looping through all comments to
-flag those that are potentially problematic. The model was used strictly
-as a triage tool, not as a final decision-maker.</li>
+flag those that were potentially problematic. The model was used
+strictly as a triage tool, not as a final decision-maker.</li>
 <li><strong>Deliberate error tradeoff:</strong> The system was
-intentionally tuned to prioritize false positives over false negatives,
-ensuring that potentially harmful content was unlikely to slip through
-while keeping the final decision in human hands.</li>
+intentionally tuned to favor false positives over false negatives. This
+ensured that potentially harmful content was unlikely to reach students,
+while accepting that some benign comments would require brief human
+review.</li>
 <li><strong>Human-in-the-loop review:</strong> All flagged comments were
 reviewed by faculty and administrators, who decided whether content
 should be edited, removed, or left unchanged before reports were
@@ -607,29 +642,49 @@ generated.</li>
 review set from ~20,000 comments to roughly ~100 per term, dramatically
 lowering review time and cost while preserving safety and
 oversight.</li>
-<li><strong>Principled deployment:</strong> By constraining AI use to a
-clearly defined, high-friction task and embedding it within a human
-review workflow, the system balanced efficiency gains with
-accountability and trust.</li>
 </ul>
+<p>By constraining AI to a clearly defined, high-friction task and
+embedding it within a human review workflow, the system balanced
+efficiency gains with accountability and trust.</p>
 </div>
 <div id="impact-reach" class="section level1">
 <h1>Impact &amp; Reach</h1>
 <ul>
-<li><strong>Program-wide deployment:</strong> The system was used by all
-MBA and EMBA students at Columbia Business School as part of their
-required leadership curriculum.</li>
-<li><strong>Scale:</strong> Each term, the pipeline generated and
-delivered personalized 360° feedback reports to thousands of students,
-incorporating tens of thousands of peer evaluations.</li>
-<li><strong>Embedded in development process:</strong> Reports served as
-the foundation for one-on-one executive coaching sessions and informed
-students’ leadership development plans throughout their programs.</li>
-<li><strong>Cost efficiency:</strong> By replacing an expensive
+<li><strong>Program-wide deployment:</strong> The system was adopted as
+a core component of Columbia Business School’s required leadership
+curriculum, used by all MBA and EMBA students as part of their
+leadership development journey. The reports became the primary input for
+one-on-one executive coaching sessions and were directly referenced by
+faculty and coaches in development planning conversations.</li>
+<li><strong>Scale:</strong> Each academic term, the pipeline reliably
+generated and delivered thousands of personalized 360° feedback reports,
+incorporating tens of thousands of peer evaluations across multiple
+rater sources. Once configured for a term, the system ran end to end
+with minimal manual intervention, meeting strict academic deadlines and
+scaling without additional staffing.</li>
+<li><strong>Behavior &amp; decision impact:</strong> The redesigned
+reports materially changed how feedback was used in practice
+<ul>
+<li>Higher student engagement with feedback materials</li>
+<li>More focused and actionable coaching conversations, grounded in
+clear patterns rather than raw scores</li>
+<li>Students used the reports to set concrete leadership development
+goals, select electives, and seek targeted leadership experiences</li>
+</ul></li>
+<li><strong>Operational efficiency:</strong> By replacing an expensive
 third-party reporting solution and eliminating large amounts of manual
-review and coordination, the system substantially reduced recurring
-costs for the department while improving the quality and flexibility of
-feedback.</li>
+coordination and review, the system
+<ul>
+<li>Reduced recurring vendor and labor costs</li>
+<li>Shortened report delivery timelines</li>
+<li>Lowered administrative burden on faculty and staff</li>
+</ul></li>
+<li><strong>Organizational trust &amp; longevity:</strong> The system
+handled sensitive, multi-source feedback for thousands of students,
+reflecting a high level of trust from faculty, administrators, coaches,
+and students. Importantly, the infrastructure continued to operate after
+I transitioned off the project, demonstrating that the work was not just
+successful, but institutionalized.</li>
 </ul>
 </div>
 <div id="continuity-handoff" class="section level1">
